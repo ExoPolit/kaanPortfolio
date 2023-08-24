@@ -162,6 +162,9 @@ color: white;
 .dark-theme footer{
   border-top: 2px solid #fff
 }
+.dark-theme .project__wrapper{
+  box-shadow: 0 12px 65px 1px rgba(224, 221, 221, 0.2);
+}
 
 
 /*
