@@ -426,8 +426,9 @@ Modal
   display: flex;
 }
 
-.fa-spinner {
-  animation: spinner 750ms infinite;
+.fa-yin-yang {
+  font-size: 128px;
+  animation: spinner 700ms infinite;
 }
 @keyframes spinner {
   0% {
