@@ -3,7 +3,7 @@
 // wGSkAvoxM_J34F_B9
 //
 
-var slideIndex = 1;
+/*var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -19,7 +19,7 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
-}
+} */
 
 let isModalOpen = false;
 let contrastToggle = false;
