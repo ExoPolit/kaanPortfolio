@@ -447,6 +447,18 @@ Modal
   font-size: 36px;
   z-index: 100;
 }
+
+/*
+
+Certificates */
+
+.cert__wrapper{
+  display: flex;
+}
+.cert__img{
+max-width: 550px;
+}
+
 /*
 
 Projects
@@ -536,7 +548,12 @@ footer {
   width: 70px;
   height: 70px;
   filter: invert(1);
+  transition: all 450ms ease;
 }
+.footer__logo--img:hover{
+  transform: rotate(270deg);
+}
+
 .footer__social--link,
 .footer__copyright {
   color: white;
@@ -580,6 +597,7 @@ left = 80vw
 .shape--0{
   top: 15vh;
   left: 5vw;
+
 }
 .shape--1{
   top: 15vh;
@@ -621,6 +639,7 @@ left = 80vw
 /* Small Phones, tablets, large smart Phone */
 
 @media (max-width: 768px){
+
 .title{
   font-size: 80px;
 }
@@ -639,6 +658,7 @@ left = 80vw
 .modal__half{
   width: 100%;
 }
+
 }
 
 /* Small Phones */
