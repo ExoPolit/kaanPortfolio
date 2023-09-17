@@ -42,6 +42,13 @@
               >Projects</a
             >
           </li>
+          <li class="nav__link">
+            <a
+              href="#cert"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Certificates</a
+            >
+          </li>
           <li class="nav__link" onclick="toggleModal()">
             <a
               href="#contact"
@@ -57,6 +64,29 @@
             ></a>
           </li>
         </ul>
+
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+      </button>
+      <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+              <li class="menu__list ">
+                  <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+              </li>
+              <li class="menu__list ">
+                  <a href="#cert" class="menu__link" onclick="closeMenu()">Certificates</a>
+              </li>
+              <li class="menu__list ">
+                  <a href="#projects" class="menu__link" onclick="closeMenu()">Projects</a>
+              </li>
+              <li class="menu__list ">
+                  <a href="#contact" class="menu__link" onclick="closeMenu()">Contact</a>
+              </li>
+          </ul>
+      </div>
       </nav>
       <header class="header">
         <div class="header__content">
@@ -88,7 +118,7 @@
       </a>
         <i class="fas fa-envelope"></i>
       </button>
-      <a href="#projects" class="scroll">
+      <a href="#cert" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
       <!--Modal-->
@@ -205,7 +235,7 @@
           </h1>
           <div class="slideshow-container">
 <!--FUll WIDTH IMAGES WITH NUMBER-->
-<div class="mySlides fade">
+<div class="mySlides fade" id="slide1">
   <span class="numbertext">1 / 5</span>
   <img src="./Certificates/Sololearn__WebDevelopment.png" alt="" style="width: 100%;">
   
@@ -332,7 +362,7 @@
       <div class="container">
         <div class="row footer__row">
           <figure>
-            <img src="./assets/logo.svg" alt="" class="footer__logo--img" />
+            <a href="#landing-page"><img src="./assets/logo.svg" alt="" class="footer__logo--img" /></a>
           </figure>
           <div class="footer__social--lists">
             <a
