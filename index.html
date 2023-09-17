@@ -196,33 +196,57 @@
 
     
     <!--Certificates-->
-    <!-----
+
     <section id="cert">
       <div class="container">
         <div class="row">
           <h1 class="section__title">
             My <span class="orange">Certificates</span>
           </h1>
-          <div class="cert__wrapper" >
-            <figure class="cert__images">
-              <img src="./Certificates/5DCC.png" class="mySlides cert__img" alt="">
-            </figure>
-            <figure class="cert__images">
-              <img src="./Certificates/Sololearn__WebDevelopment.png" class="mySlides cert__img" alt="">
-            </figure>
-            <figure class="cert__images">
-              <img src="./Certificates/Sololearn__Introduction_HTML.png" class="mySlides cert__img" alt="">
-            </figure>
-            <figure class="cert__images">
-              <img src="./Certificates/Sololearn__Introduction__CSS.png" class="mySlides cert__img" alt="">
-            </figure>
-          <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-          </div>
+          <div class="slideshow-container">
+<!--FUll WIDTH IMAGES WITH NUMBER-->
+<div class="mySlides fade">
+  <span class="numbertext">1 / 5</span>
+  <img src="./Certificates/Sololearn__WebDevelopment.png" alt="" style="width: 100%;">
+  
+</div>
+<div class="mySlides fade">
+  <span class="numbertext">2 / 5</span>
+  <img src="./Certificates/Sololearn__Introduction_HTML.png" alt="" style="width: 100%;">
+  
+</div>
+<div class="mySlides fade">
+  <span class="numbertext">3 / 5</span>
+  <img src="./Certificates/Sololearn__Introduction__CSS.png" alt="" style="width: 100%;">
+  
+</div>
+<div class="mySlides fade">
+  <span class="numbertext">4 / 5</span>
+  <img src="./Certificates/Sololearn__INtroduction__JS.png" alt="" style="width: 100%;">
+  
+</div>
+<div class="mySlides fade">
+  <span class="numbertext">5 / 5</span>
+  <img src="./Certificates/5DCC.png" alt="" style="width: 100%;">
+  
+</div>
+<!---NEXT AND PREVIOUS BTN-->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <br>
+        <!---DOTS/CIRCLES-->
+        <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
       </div>
+      </div>
+    </div>
     </section>
-  ---->
+
 
 
   
