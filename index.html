@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Kaan Özkan</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
     <script src="main.js"></script>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
@@ -22,7 +22,7 @@
     </script>
   </head>
   <body onmousemove="moveBackground(event)">
-    <section id="landing-page" >
+    <section id="landing-page">
       <nav>
         <figure>
           <img id="personal-logo" src="./assets/logo.svg" alt="EP_Logo1" />
@@ -67,26 +67,40 @@
 
         <button class="btn__menu" onclick="openMenu()">
           <i class="fas fa-bars"></i>
-      </button>
-      <div class="menu__backdrop">
+        </button>
+        <div class="menu__backdrop">
           <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-              <i class="fas fa-times"></i>
+            <i class="fas fa-times"></i>
           </button>
           <ul class="menu__links">
-              <li class="menu__list ">
-                  <a href="#about" class="menu__link" onclick="closeMenu(), toggleModal()">About</a>
-              </li>
-              <li class="menu__list ">
-                  <a href="#cert" class="menu__link" onclick="closeMenu()">Certificates</a>
-              </li>
-              <li class="menu__list ">
-                  <a href="#projects" class="menu__link" onclick="closeMenu()">Projects</a>
-              </li>
-              <li class="menu__list ">
-                  <a href="#contact" class="menu__link" onclick="closeMenu(), toggleModal()">Contact</a>
-              </li>
+            <li class="menu__list">
+              <a
+                href="#about"
+                class="menu__link"
+                onclick="closeMenu(), toggleModal()"
+                >About</a
+              >
+            </li>
+            <li class="menu__list">
+              <a href="#cert" class="menu__link" onclick="closeMenu()"
+                >Certificates</a
+              >
+            </li>
+            <li class="menu__list">
+              <a href="#projects" class="menu__link" onclick="closeMenu()"
+                >Projects</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                href="#contact"
+                class="menu__link"
+                onclick="closeMenu(), toggleModal()"
+                >Contact</a
+              >
+            </li>
           </ul>
-      </div>
+        </div>
       </nav>
       <header class="header">
         <div class="header__content">
@@ -97,25 +111,40 @@
             for building web-sites and web applications with great user
             experiences.
             <br />
-            Here's a bit more <b class="orange click link__hover-effect link__hover-effect--black" onclick="toggleModal()">about me</b>.
+            Here's a bit more
+            <b
+              class="orange click link__hover-effect link__hover-effect--black"
+              onclick="toggleModal()"
+              >about me</b
+            >.
           </p>
           <div class="social__list">
-            <a href="https://www.linkedin.com/in/kaan-%C3%B6zkan-74a409278/" class="social__link click" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/kaan-%C3%B6zkan-74a409278/"
+              class="social__link click"
+              target="_blank"
+            >
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/ExoPolit" class="social__link click" target="_blank">
+            <a
+              href="https://github.com/ExoPolit"
+              class="social__link click"
+              target="_blank"
+            >
               <i class="fab fa-github"></i>
             </a>
-            <a href="./assets/Lebenslauf.pdf" class="social__link click" target="_blank">
+            <a
+              href="./assets/Lebenslauf.pdf"
+              class="social__link click"
+              target="_blank"
+            >
               <i class="fas fa-file-pdf"></i>
             </a>
           </div>
         </div>
       </header>
-      <a href="#">
-        <button class="mail__button click" onclick="toggleModal()">
 
-      </a>
+      <button class="mail__button click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
       </button>
       <a href="#cert" class="scroll">
@@ -134,12 +163,21 @@
             I'm a 27 year-old <b class="orange">frontend developer</b> with a
             strong passion for developing wesites with great
             <b class="orange">user experiences.</b>
-            <br><br>
-            Curently i'm doing the Bootcamp by <b class="orange">Frontend Simplified</b>. To learn Coding with the best practices from the beginning of my journey. 
-            <br><br>
-            Feel free to check out my repositories on <b style="color: #C71585;"><a href="https://github.com/ExoPolit?tab=repositories" target="_blank" class="link__hover-effect link__hover-effect--black">Github</a></b>.
+            <br /><br />
+            Curently i'm doing the Bootcamp by
+            <b class="orange">Frontend Simplified</b>. To learn Coding with the
+            best practices from the beginning of my journey. <br /><br />
+            Feel free to check out my repositories on
+            <b style="color: #c71585"
+              ><a
+                href="https://github.com/ExoPolit?tab=repositories"
+                target="_blank"
+                class="link__hover-effect link__hover-effect--black"
+                >Github</a
+              ></b
+            >.
           </p>
-          
+
           <div class="modal__languages">
             <figure class="modal__language">
               <img
@@ -175,7 +213,7 @@
             </figure>
           </div>
         </div>
-        <div class="modal__half modal__contact" >
+        <div class="modal__half modal__contact">
           <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">Let's have a Chat!</h3>
           <h4 class="modal__sub-title modal__sub-title--cantact">
@@ -184,7 +222,7 @@
           <form onsubmit="contact(event)" id="contact__form">
             <div class="form__item">
               <label class="from__item--label">Name</label>
-              <input type="text" name="user_name" class="input" required  />
+              <input type="text" name="user_name" class="input" required />
             </div>
             <div class="form__item">
               <label class="from__item--label">Email</label>
@@ -210,21 +248,18 @@
             Thanks for the message! Looking forward to speaking to you soon!
           </div>
         </div>
-        
       </div>
-      <img src="./assets/semi circle.svg" class="shape shape--0">
-      <img src="./assets/circle.svg" class="shape shape--1">
-      <img src="./assets/squiggly.svg" class="shape shape--2">
-      <img src="./assets/triangle.svg" class="shape shape--3">
-      <img src="./assets/semi circle.svg" class="shape shape--4">
-      <img src="./assets/circle.svg" class="shape shape--5">
-      <img src="./assets/circle.svg" class="shape shape--6">
-      <img src="./assets/squiggly.svg" class="shape shape--7">
-      <img src="./assets/triangle.svg" class="shape shape--8">
- 
+      <img src="./assets/semi circle.svg" class="shape shape--0" />
+      <img src="./assets/circle.svg" class="shape shape--1" />
+      <img src="./assets/squiggly.svg" class="shape shape--2" />
+      <img src="./assets/triangle.svg" class="shape shape--3" />
+      <img src="./assets/semi circle.svg" class="shape shape--4" />
+      <img src="./assets/circle.svg" class="shape shape--5" />
+      <img src="./assets/circle.svg" class="shape shape--6" />
+      <img src="./assets/squiggly.svg" class="shape shape--7" />
+      <img src="./assets/triangle.svg" class="shape shape--8" />
     </section>
 
-    
     <!--Certificates-->
 
     <section id="cert">
@@ -234,52 +269,55 @@
             My <span class="orange">Certificates</span>
           </h1>
           <div class="slideshow-container">
-<!--FUll WIDTH IMAGES WITH NUMBER-->
-<div class="mySlides fade" id="slide1">
-  <span class="numbertext">1 / 5</span>
-  <img src="./Certificates/Sololearn__WebDevelopment.png" alt="" style="width: 100%;">
-  
-</div>
-<div class="mySlides fade">
-  <span class="numbertext">2 / 5</span>
-  <img src="./Certificates/Sololearn__Introduction_HTML.png" alt="" style="width: 100%;">
-  
-</div>
-<div class="mySlides fade">
-  <span class="numbertext">3 / 5</span>
-  <img src="./Certificates/Sololearn__Introduction__CSS.png" alt="" style="width: 100%;">
-  
-</div>
-<div class="mySlides fade">
-  <span class="numbertext">4 / 5</span>
-  <img src="./Certificates/Sololearn__INtroduction__JS.png" alt="" style="width: 100%;">
-  
-</div>
-<div class="mySlides fade">
-  <span class="numbertext">5 / 5</span>
-  <img src="./Certificates/5DCC.png" alt="" style="width: 100%;">
-  
-</div>
-<!---NEXT AND PREVIOUS BTN-->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!--FUll WIDTH IMAGES WITH NUMBER-->
+            <div class="mySlides fade" id="slide1">
+              <img
+                src="./Certificates/Sololearn__WebDevelopment.png"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./Certificates/Sololearn__Introduction_HTML.png"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./Certificates/Sololearn__Introduction__CSS.png"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./Certificates/Sololearn__INtroduction__JS.png"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img src="./Certificates/5DCC.png" alt="" style="width: 100%" />
+            </div>
+            <!---NEXT AND PREVIOUS BTN-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+          <!---DOTS/CIRCLES-->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
         </div>
-        <br>
-        <!---DOTS/CIRCLES-->
-        <div style="text-align: center;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
       </div>
-      </div>
-    </div>
     </section>
 
-
-
-  
     <!--Projects-->
     <section id="projects">
       <div class="container">
@@ -289,7 +327,6 @@
           </h1>
           <ul class="project__list">
             <li class="project">
-
               <div class="project__wrapper">
                 <img src="./assets/Library.png" class="project__img" alt="" />
                 <div class="project__wrapper--bg"></div>
@@ -301,11 +338,14 @@
                     HTML, CSS, JavaScript
                   </h4>
                   <p class="project__description--para">
-                    Here I created an e-commerce website for an online library as part of the bootcamp. 
-                    For this project, I mainly wrote HTML and CSS. A little Javascript is for the hamburger menu. 
-                    <br> 
-                    The <b class="orange">Github</b> icon will take you to the repository.  <br>
-                    The <b class="orange">Link</b> icon will take you to the Website, which is hosted via Github.
+                    Here I created an e-commerce website for an online library
+                    as part of the bootcamp. For this project, I mainly wrote
+                    HTML and CSS. A little Javascript is for the hamburger menu.
+                    <br />
+                    The <b class="orange">Github</b> icon will take you to the
+                    repository. <br />
+                    The <b class="orange">Link</b> icon will take you to the
+                    Website, which is hosted via Github.
                   </p>
                   <div class="project__description--links">
                     <a
@@ -315,7 +355,11 @@
                     >
                       <i class="fab fa-github icon__hover--effect"></i>
                     </a>
-                    <a href="https://exopolit.github.io/Library/" class="project__description--link" target="_blank">
+                    <a
+                      href="https://exopolit.github.io/Library/"
+                      class="project__description--link"
+                      target="_blank"
+                    >
                       <i class="fas fa-link icon__hover--effect"></i>
                     </a>
                   </div>
@@ -333,11 +377,15 @@
                     HTML, CSS, JavaScript
                   </h4>
                   <p class="project__description--para">
-                    That was the Week 2 Final Challenge. 
-                    Through this challenge I learned to work better with the inspect element and to use it, e.g. to change the CSS properties. 
-                    As I progressed, I started to write reusable code. To make it more accessible for others. <br>
-                    The <b class="orange">Github</b> icon will take you to the repository.  <br>
-                    The <b class="orange">Link</b> icon will take you to the Website, which is hosted via Github.
+                    That was the Week 2 Final Challenge. Through this challenge
+                    I learned to work better with the inspect element and to use
+                    it, e.g. to change the CSS properties. As I progressed, I
+                    started to write reusable code. To make it more accessible
+                    for others. <br />
+                    The <b class="orange">Github</b> icon will take you to the
+                    repository. <br />
+                    The <b class="orange">Link</b> icon will take you to the
+                    Website, which is hosted via Github.
                   </p>
                   <div class="project__description--links">
                     <a
@@ -347,7 +395,11 @@
                     >
                       <i class="fab fa-github icon__hover--effect"></i>
                     </a>
-                    <a href="https://exopolit.github.io/treactclone.io/" class="project__description--link" target="_blank">
+                    <a
+                      href="https://exopolit.github.io/treactclone.io/"
+                      class="project__description--link"
+                      target="_blank"
+                    >
                       <i class="fas fa-link icon__hover--effect"></i>
                     </a>
                   </div>
@@ -362,7 +414,9 @@
       <div class="container">
         <div class="row footer__row">
           <figure>
-            <a href="#landing-page"><img src="./assets/logo.svg" alt="" class="footer__logo--img" /></a>
+            <a href="#landing-page"
+              ><img src="./assets/logo.svg" alt="" class="footer__logo--img"
+            /></a>
           </figure>
           <div class="footer__social--lists">
             <a

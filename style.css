@@ -564,17 +564,6 @@ Certificates
 .next:hover {
   background-color: #f94d49;
 }
-/*Numbers*/
-.numbertext {
-  color: #141313;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 /* DOTS / BULLTES / INDICATORS */
 .dot {
