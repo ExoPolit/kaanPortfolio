@@ -328,7 +328,12 @@ nav {
 #personal-logo {
   width: 50px;
   filter: invert(1);
+ 
 }
+
+
+
+
 .nav__link--list {
   display: flex;
 }
