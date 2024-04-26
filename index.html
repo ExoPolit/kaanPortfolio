@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kaan Özkan</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("v81IEuwaAF-iGtXiKpq3A");
+      })();
+    </script>
+  </head>
+
+  <body onmousemove="moveBackground(event)">
+    <section id="landing-page">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/logo.svg" alt="EP_Logo1" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#cert"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Certificates</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#contact"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-sun"></i
+            ></a>
+          </li>
+        </ul>
+
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a
+                href="#about"
+                class="menu__link"
+                onclick="closeMenu(), toggleModal()"
+                >About</a
+              >
+            </li>
+            <li class="menu__list">
+              <a href="#cert" class="menu__link" onclick="closeMenu()"
+                >Certificates</a
+              >
+            </li>
+            <li class="menu__list">
+              <a href="#projects" class="menu__link" onclick="closeMenu()"
+                >Projects</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                href="#contact"
+                class="menu__link"
+                onclick="closeMenu(), toggleModal()"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title orange">I'm Kaan.</h1>
+          <p class="header__para">
+            I'm a <b class="orange">Frontend Developer</b> with a strong passion
+            for building web-sites and web applications with great user
+            experiences.
+            <br />
+            Here's a bit more
+            <b
+              class="orange click link__hover-effect link__hover-effect--black"
+              onclick="toggleModal()"
+              >about me</b
+            >.
+          </p>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/kaan-%C3%B6zkan-74a409278/"
+              class="social__link click"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/ExoPolit"
+              class="social__link click"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="./assets/Lebenslauf.pdf"
+              class="social__link click"
+              target="_blank"
+            >DE
+              <i class="fas fa-file-pdf"></i>
+              <a
+              href="./assets/Lebenslauf_English.pdf"
+              class="social__link click"
+              target="_blank"
+            >EN
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <button class="mail__button click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <a href="#cert" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <!--Modal-->
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Developer
+          </h4>
+          <p class="modal__para">
+            I'm a 27 year-old <b class="orange">frontend developer</b> with a
+            strong passion for developing wesites with great
+            <b class="orange">user experiences.</b>
+            <br /><br />
+            Curently i'm doing the Bootcamp by
+            <b class="orange">Frontend Simplified</b>. To learn Coding with the
+            best practices from the beginning of my journey. <br /><br />
+            Feel free to check out my repositories on
+            <b style="color: #c71585"
+              ><a
+                href="https://github.com/ExoPolit?tab=repositories"
+                target="_blank"
+                class="link__hover-effect link__hover-effect--black"
+                >Github</a
+              ></b
+            >.
+          </p>
+
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+              />
+              <span class="language__name">JS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/React-icon.svg.png"
+                alt=""
+              />
+              <span class="language__name">React</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Let's have a Chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--cantact">
+            I'd love to hear from <b class="orange">You.</b>
+          </h4>
+          <form onsubmit="contact(event)" id="contact__form">
+            <div class="form__item">
+              <label class="from__item--label">Name</label>
+              <input type="text" name="user_name" class="input" required />
+            </div>
+            <div class="form__item">
+              <label class="from__item--label">Email</label>
+              <input type="email" name="user_email" class="input" required />
+            </div>
+            <div class="form__item">
+              <label class="from__item--label">Message</label>
+              <textarea
+                type="text"
+                name="message"
+                class="input"
+                required
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Let's get this Rockin!
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-yin-yang"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon!
+          </div>
+        </div>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0" />
+      <img src="./assets/circle.svg" class="shape shape--1" />
+      <img src="./assets/squiggly.svg" class="shape shape--2" />
+      <img src="./assets/triangle.svg" class="shape shape--3" />
+      <img src="./assets/semi circle.svg" class="shape shape--4" />
+      <img src="./assets/circle.svg" class="shape shape--5" />
+      <img src="./assets/circle.svg" class="shape shape--6" />
+      <img src="./assets/squiggly.svg" class="shape shape--7" />
+      <img src="./assets/triangle.svg" class="shape shape--8" />
+    </section>
+
+    <!--Certificates-->
+
+    <section id="cert">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            My <span class="orange">Certificates</span>
+          </h1>
+          <div class="slideshow-container">
+            <!--FUll WIDTH IMAGES WITH NUMBER-->
+            <div class="mySlides fade" id="slide1">
+              <img
+                src="./Certificates/Sololearn__WebDevelopment.png"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./Certificates/Sololearn__Introduction_HTML.png"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./Certificates/Sololearn__Introduction__CSS.png"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./Certificates/Sololearn__INtroduction__JS.png"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img src="./Certificates/JavaScript Intermediate_certificate.jpg" alt="" style="width: 100%" />
+            </div>
+            <div class="mySlides fade">
+              <img src="./Certificates/5DCC.png" alt="" style="width: 100%" />
+            </div>
+            <!---NEXT AND PREVIOUS BTN-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+          <!---DOTS/CIRCLES-->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Projects-->
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="orange">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Netflix_Clone-img.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Next.js 14 | Netflix Clone
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Next.js 14, React, Supabase, Next-Auth, Prisma, Tailwind.css
+                  </h4>
+                  <p class="project__description--para">
+                    In my latest project, a Netflix clone using Next.js 14, I
+                    drew inspiration from an enlightening YouTube tutorial. The
+                    application boasts built-in authentication supporting
+                    traditional logins and GitHub authentication. A standout
+                    feature is the trailer view, allowing users to get a sneak
+                    peek of movies and series before watching. I crafted an
+                    internal data structure for films and series, bypassing
+                    external APIs. Technologically, I employed React,
+                    TypeScript, Supabase for the database, Next-Auth for secure
+                    authentication, Prisma for database queries, and
+                    Tailwind.css for design flair. This project not only
+                    showcases my knack for leveraging YouTube resources for
+                    innovative solutions but also highlights my expertise across
+                    a diverse technology stack. <br /> <br />
+                    The <b class="orange">Github</b> icon will take you to the
+                    repository. <br />
+                    The <b class="orange">Link</b> icon will take you to the
+                    Website, which is hosted via Github.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/ExoPolit/netflix-nextjs-clone"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github icon__hover--effect"></i>
+                    </a>
+                    <a
+                      href="https://netflix-clone-git-main-exopolits-projects.vercel.app/login"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link icon__hover--effect"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__wrapper">
+                <img src="./assets/ANimehub Snipo.png" class="project__img" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    AnimeHub V2 -- Bootcamp Project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                     JavaScript, React, Bootstrap, CSS, Jikan API
+                  </h4>
+                  <p class="project__description--para">
+                   AnimeHub V2 is created with React and Bootstrap. <br /> A small page to search for ur Favorite Animes. <br />
+                   API used: Jikan v4
+                   <br /> <br />
+                    The <b class="orange">Github</b> icon will take you to the
+                    repository. <br />
+                    The <b class="orange">Link</b> icon will take you to the
+                    Website, which is hosted via Vercel.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/ExoPolit/animehubTwo"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github icon__hover--effect"></i>
+                    </a>
+                    <a
+                      href="https://animehub2-git-main-exopolits-projects.vercel.app/"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link icon__hover--effect"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__wrapper">
+                <img src="./assets/Animehub_Og.png" class="project__img" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    AnimeHub  -- Bootcamp Project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript, Jikan API
+                  </h4>
+                  <p class="project__description--para">
+                   AnimeHub The OG. 
+                   API used: Jikan v4
+                   <br /> <br />
+                    The <b class="orange">Github</b> icon will take you to the
+                    repository. <br />
+                    The <b class="orange">Link</b> icon will take you to the
+                    Website, which is hosted via Vercel.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/ExoPolit/anime"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github icon__hover--effect"></i>
+                    </a>
+                    <a
+                      href="https://exopolit.github.io/anime/"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link icon__hover--effect"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__wrapper">
+                <img src="./assets/Library.png" class="project__img" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Library - Bootcamp Project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    Here I created an e-commerce website for an online library
+                    as part of the bootcamp. For this project, I mainly wrote
+                    HTML and CSS. A little Javascript is for the hamburger menu.
+                    <br /> <br />
+                    The <b class="orange">Github</b> icon will take you to the
+                    repository. <br />
+                    The <b class="orange">Link</b> icon will take you to the
+                    Website, which is hosted via Github.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/ExoPolit/Library"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github icon__hover--effect"></i>
+                    </a>
+                    <a
+                      href="https://exopolit.github.io/Library/"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link icon__hover--effect"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              <div class="project__wrapper">
+                <img src="./assets/T-react.png" class="project__img" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    T-react Clone - Bootcamp Project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    That was the Week 2 Final Challenge. Through this challenge
+                    I learned to work better with the inspect element and to use
+                    it, e.g. to change the CSS properties. As I progressed, I
+                    started to write reusable code. To make it more accessible
+                    for others. <br /> <br />
+                    The <b class="orange">Github</b> icon will take you to the
+                    repository. <br />
+                    The <b class="orange">Link</b> icon will take you to the
+                    Website, which is hosted via Github.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/ExoPolit/treactclone.io"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github icon__hover--effect"></i>
+                    </a>
+                    <a
+                      href="https://exopolit.github.io/treactclone.io/"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link icon__hover--effect"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <a href="#landing-page"
+              ><img src="./assets/logo.svg" alt="" class="footer__logo--img"
+            /></a>
+          </figure>
+          <div class="footer__social--lists">
+            <a
+              href="https://github.com/ExoPolit"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >Github</a
+            >
+            <a
+              href="https://www.linkedin.com/in/kaan-%C3%B6zkan-74a409278/"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >LinkedIn</a
+            >
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              onclick="toggleModal()"
+              >Contact</a
+            >
+          </div>
+          <div class="footer__copyright">Copyright © 2023 Kaan Özkan</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
