@@ -673,7 +673,13 @@ Projects
 .project__description--para {
   margin: 16px 0;
 }
-
+.disabled:hover{
+  cursor:no-drop;
+}
+.disabled:hover::after{
+  content: "Link is Currently not working";
+  color: red;
+}
 /* 
 
 Footer 
